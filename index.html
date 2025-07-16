@@ -199,7 +199,7 @@
   gsap.registerPlugin(ScrollTrigger);
 
   const carousel = document.querySelector(".carousel");
-  const totalWidth = carousel.scrollWidth - window.innerWidth - 200;
+  const totalWidth = carousel.scrollWidth - window.innerWidth;
 
   gsap.to(carousel, {
     x: () => -totalWidth,
